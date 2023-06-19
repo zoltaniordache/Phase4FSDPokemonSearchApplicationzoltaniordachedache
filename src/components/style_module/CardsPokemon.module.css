@@ -1,0 +1,140 @@
+.pokedex_cardsPokemon {
+  padding: 0 0 10rem 7.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+.pokedex_cardsPokemon li {
+  position: relative;
+  bottom: 0;
+  padding-top: 1.4rem;
+  max-width: 100%;
+  height: 30.4rem;
+  background: #ffffff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 10px 51px -5px rgb(183 189 193 / 30%);
+  box-sizing: border-box;
+  transition: all 0.2s;
+  animation: fadeIn 0.3s forwards;
+  cursor: pointer;
+}
+
+.pokedex_cardsPokemon li:hover {
+  box-shadow: 0px 12px 40px -5px rgba(90, 96, 100, 0.3);
+  bottom: 0.2rem;
+}
+
+.pokedex_right_wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 7.2rem;
+  padding-bottom: 4rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pokedex_button,
+#showMorePokemon {
+  background-color: rgba(188, 0, 1, 0.1);
+  color: #bc0001;
+  width: 19.6rem;
+  line-height: 4.5rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: -0.01em;
+  border-radius: 6px;
+  border: none;
+  transition: all 0.3s;
+}
+
+.pokedex_button:hover {
+  background-color: #bc0001;
+  color: #ffffff;
+}
+
+.pokemonCard_info_wrapper {
+  display: flex;
+  padding: 0 2.8rem;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.pokemonCard_id {
+  font-family: var(--font-paragraph);
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 150%;
+  color: #7a7d80;
+  margin-bottom: 0.6rem;
+}
+
+.pokemonCard_text {
+  font-family: var(--font-title);
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: var(--color-font-black);
+}
+
+.pokemonCard_icoType {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemonCard_icoType img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.pokemonCard_icoType img:last-child {
+  margin-left: 0.8rem;
+}
+
+@media (min-width: 850px) and (max-width: 950px) {
+  .pokedex_cardsPokemon {
+    padding: 0 0 10rem 3.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .pokedex_cardsPokemon {
+    padding: 0 0 6rem 5.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+
+  .pokedex_right_wrapper {
+    padding-bottom: 7rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 650px) {
+  .pokedex_cardsPokemon {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .pokedex_cardsPokemon {
+    padding: 0 0 6rem 0rem;
+    grid-template-columns: 1fr;
+  }
+}

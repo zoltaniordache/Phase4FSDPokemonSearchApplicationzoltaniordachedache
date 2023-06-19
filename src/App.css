@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;600;700;800&display=swap');
+
+:root {
+  --font-title: 'Montserrat', sans-serif;
+  --font-paragraph: 'inter', sans-serif;
+  --color-font-black: #2f3133;
+  --grey: #eff3f6;
+  --normal: #909090;
+  --fighting: #c44d61;
+  --flying: #758cbd;
+  --poison: #ac6aca;
+  --ground: #ce8056;
+  --rock: #84beb3;
+  --bug: #9bba48;
+  --ghost: #616eb7;
+  --steel: #6594a1;
+  --fire: #e96303;
+  --water: #4f77be;
+  --grass: #73b861;
+  --electric: #d4bc34;
+  --psychic: #eb8b85;
+  --ice: #71baac;
+  --dragon: #2c6ac1;
+  --dark: #595761;
+  --fairy: #e296e1;
+  --shadown: #0000ff;
+  --unknow: #024546;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+h1 {
+  padding: 0 2.4rem;
+  font-family: var(--font-title);
+  font-size: 6.4rem;
+}
+
+h2 {
+  color: var(--color-font-black);
+  font-family: var(--font-title);
+  font-size: 3.2rem;
+  line-height: 3.9rem;
+  letter-spacing: -0.01em;
+}
+
+.contain {
+  max-width: 118.9rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+  display: grid;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+}

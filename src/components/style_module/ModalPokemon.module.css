@@ -1,0 +1,164 @@
+.cardsPokemon_modal {
+  padding: 6rem 4rem;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.cardsPokemon_modal_images {
+  display: flex;
+  align-items: center;
+}
+
+.modal_imagePokemon {
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.modal_imagePokemon::before {
+  height: 100%;
+  width: 100%;
+  border-radius: 2.8rem 0 0 2.8rem;
+}
+
+.cardsPokemon_modal_typeImage {
+  position: absolute;
+  filter: opacity(0.5);
+}
+
+.cardsPokemon_modal_images img {
+  display: block;
+  width: 100%;
+  max-width: 30rem;
+}
+
+.cardsPokemon_modal_image_pokemon {
+  position: absolute;
+  right: -3rem;
+}
+
+.cardsPokemon_modal_texts {
+  padding: 2rem 4rem 2rem 6rem;
+}
+
+.cardsPokemon_modal_context {
+  display: flex;
+  max-width: 60rem;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 2.8rem;
+  background: #fff;
+}
+
+.cardsPokemon_modal_closeIcon {
+  background: #fff;
+  position: absolute;
+  top: -0.7rem;
+  right: -0.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cardsPokemon_modal_title {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.cardsPokemon_modal_title h2 {
+  text-transform: capitalize;
+  font-size: 2.8rem;
+  margin-right: 2rem;
+}
+
+.cardsPokemon_modal_title span {
+  font-family: 'Inter', sans-serif;
+  line-height: 2rem;
+  font-size: 1.8rem;
+  color: #7a7d80;
+}
+
+.cardsPokemon_modal_types,
+.cardsPokemon_modal_ability {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-top: 1.4rem;
+}
+
+.cardsPokemon_modal_types li {
+  font-family: 'Inter', sans-serif;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  color: #ffff;
+  margin-right: 2rem;
+}
+
+.modal_types_text::before {
+  width: 0;
+  height: 0;
+  padding: 2rem 4rem;
+  border-radius: 0.5rem;
+}
+
+.cardsPokemon_modal_subtitle {
+  margin-top: 4rem;
+  font-family: 'Inter', sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.01em;
+  color: #4d5053;
+}
+
+.cardsPokemon_modal_ability li {
+  font-family: 'Inter', sans-serif;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-right: 2rem;
+}
+
+.cardsPokemon_modal_stats {
+  margin-top: 2rem;
+}
+
+.cardsPokemon_modal_stats_text {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  margin-bottom: 1.5rem;
+}
+
+.cardsPokemon_modal_stats_text li {
+  font-family: 'Inter', sans-serif;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  color: #7a7d80;
+  width: 100%;
+  display: block;
+}
+
+.cardsPokemon_modal_stats_backbar {
+  height: 0.5rem;
+  width: 100%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background: #eff3f6;
+  border-radius: 0.8rem;
+}
+
+.cardsPokemon_modal_stats_bar {
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 0.8rem;
+}

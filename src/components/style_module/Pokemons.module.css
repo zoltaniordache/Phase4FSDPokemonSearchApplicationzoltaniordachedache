@@ -1,0 +1,288 @@
+.pokedex_left_wrapper li {
+  opacity: 1;
+  margin-bottom: 3rem;
+  filter: grayscale(0);
+}
+
+.pokedex_left_wrapper li:hover,
+:global(li.active) {
+  opacity: 0.6;
+  filter: grayscale(100%);
+}
+
+.pokedex_left_wrapper {
+  min-width: 15.9rem;
+  padding: 7.2rem 0 10rem 0rem;
+  border-right: 1px solid var(--grey);
+}
+
+.pokedex_typePokemon {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.pokedex_typePokemon_icon {
+  padding-right: 2rem;
+  opacity: 1;
+}
+
+.pokedex_typePokemon_text {
+  text-transform: capitalize;
+  color: var(--color-disable);
+  font-family: var(--font-paragraph);
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-weight: 600;
+}
+
+.pokemonCount_wrapper {
+  padding: 7.2rem 0rem 0 7.5rem;
+  flex: 1;
+  overflow-x: hidden;
+}
+
+.pokemonCount_top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 7.5rem;
+}
+
+.pokemonCount_top img {
+  margin-right: 1.8rem;
+}
+
+.pokemonCount_number {
+  font-family: var(--font-title);
+  margin-right: 0.5rem;
+  
+}
+
+.pokemonCount_text {
+  color: #4d5053;
+  font-family: var(--font-paragraph);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 150%;
+ 
+}
+.pokemonCount_text2 {
+  color: #4d5053;
+  font-family: var(--font-paragraph);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center
+}
+
+:global(.imagePokemon) {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 1.4rem;
+  cursor: pointer;
+}
+
+:global(.imagePokemon::before) {
+  content: '';
+  display: block;
+  width: 16.5rem;
+  height: 16.5rem;
+  border-radius: 50%;
+  position: absolute;
+  filter: opacity(0.15);
+  z-index: 0;
+}
+
+:global(.imagePokemon img) {
+  max-width: 55%;
+  max-height: 20rem;
+  z-index: 1;
+}
+
+:global(.pokedex) {
+  display: flex;
+  height: 100%;
+}
+
+:global(.all button) {
+  color: #3e75c3;
+}
+
+:global(.normal button) {
+  color: var(--normal);
+}
+
+:global(.fighting button) {
+  color: var(--fighting);
+}
+
+:global(.flying button) {
+  color: var(--flying);
+}
+
+:global(.poison button) {
+  color: var(--poison);
+}
+
+:global(.rock button) {
+  color: var(--rock);
+}
+
+:global(.bug button) {
+  color: var(--bug);
+}
+
+:global(.ghost button) {
+  color: var(--ghost);
+}
+
+:global(.steel button) {
+  color: var(--steel);
+}
+
+:global(.fire button) {
+  color: var(--fire);
+}
+
+:global(.water button) {
+  color: var(--water);
+}
+
+:global(.fire button) {
+  color: var(--fire);
+}
+
+:global(.grass button) {
+  color: var(--grass);
+}
+
+:global(.electric button) {
+  color: var(--electric);
+}
+
+:global(.ground button) {
+  color: var(--ground);
+}
+
+:global(.psychic button) {
+  color: var(--psychic);
+}
+
+:global(.ice button) {
+  color: var(--ice);
+}
+
+:global(.dragon button) {
+  color: var(--dragon);
+}
+
+:global(.dark button) {
+  color: var(--dark);
+}
+
+:global(.fairy button) {
+  color: var(--fairy);
+}
+
+:global(.normal .imagePokemon::before),
+:global(.type_background .normal) {
+  background: var(--normal);
+}
+
+:global(.fighting .imagePokemon::before),
+:global(.type_background .fighting) {
+  background: var(--fighting);
+}
+
+:global(.flyng .imagePokemon::before),
+:global(.type_background .flying) {
+  background: var(--flying);
+}
+
+:global(.poison .imagePokemon::before),
+:global(.type_background .poison) {
+  background: var(--poison);
+}
+
+:global(.rock .imagePokemon::before),
+:global(.type_background .rock) {
+  background: var(--rock);
+}
+
+:global(.bug .imagePokemon::before),
+:global(.type_background .bug) {
+  background: var(--bug);
+}
+
+:global(.ghost .imagePokemon::before),
+:global(.type_background .ghost) {
+  background: var(--ghost);
+}
+
+:global(.steel .imagePokemon::before),
+:global(.type_background .steel) {
+  background: var(--steel);
+}
+
+:global(.fire .imagePokemon::before),
+:global(.type_background .fire) {
+  background: var(--fire);
+}
+
+:global(.water .imagePokemon::before),
+:global(.type_background .water) {
+  background: var(--water);
+}
+
+:global(.grass .imagePokemon::before),
+:global(.type_background .grass) {
+  background: var(--grass);
+}
+
+:global(.electric .imagePokemon::before),
+:global(.type_background .electric) {
+  background: var(--electric);
+}
+
+:global(.ground .imagePokemon::before),
+:global(.type_background .ground) {
+  background: var(--ground);
+}
+
+:global(.psychic .imagePokemon::before),
+:global(.type_background .psychic) {
+  background: var(--psychic);
+}
+
+:global(.ice .imagePokemon::before),
+:global(.type_background .ice) {
+  background: var(--ice);
+}
+
+:global(.dragon .imagePokemon::before),
+:global(.type_background .dragon) {
+  background: var(--dragon);
+}
+
+:global(.dark .imagePokemon::before),
+:global(.type_background .dark) {
+  background: var(--dark);
+}
+
+:global(.fairy .imagePokemon::before),
+:global(.type_background .fairy) {
+  background: var(--fairy);
+}
+
+@media (max-width: 450px) {
+  .pokedex_left_wrapper {
+    display: none;
+  }
+}
